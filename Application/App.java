@@ -8,6 +8,7 @@ public class App {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new RandPanel());
         frame.setSize(720, 480);
+        // frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
