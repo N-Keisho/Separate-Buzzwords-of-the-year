@@ -7,6 +7,7 @@ import java.io.IOException;
 import javax.swing.*;
 import java.util.ArrayList;
 
+// ランダムに年を選び、その年のアカデミー賞の情報を表示するパネル
 public class RandPanel extends JPanel {
     private ArrayList<JLabel> labels = new ArrayList<JLabel>();
     private JButton button = new JButton("Generate Random");
@@ -48,3 +49,16 @@ public class RandPanel extends JPanel {
         }
     }
 }
+
+// public class App extends JFrame{
+//     public static void main(String[] args) {
+//         new App();
+//         // JFrame frame = new JFrame("RandPanelApp");
+//         // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//         // frame.setContentPane(new RandPanel());
+//         // frame.setSize(720, 480);
+//         // // frame.setLocationRelativeTo(null);
+//         // frame.setVisible(true);
+    
+//     }
+// }

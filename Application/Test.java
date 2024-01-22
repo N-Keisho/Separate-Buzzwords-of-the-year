@@ -58,14 +58,37 @@ public class Test extends JFrame {
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
 
-            g.setColor(color);
-            g.fillOval((int) x - 20, (int) y - 20, 40, 40);
+            paintTest(g, 0, 300);
+            // g.setColor(color);
+            g.setColor(Color.WHITE);
+            // g.fillOval((int) x - 20, (int) y - 20, 40, 40);
+            g.fillRect((int) x, (int) y, 300, 200);
             g.setColor(Color.BLACK);
             int i = 0;
             for (String data : awardData) {
-                g.drawString(data, (int) x + 20, (int) y + 20 * i++);
+                if (data == null) break;
+                else if(data.length() > 20){
+                    String message = "";
+                    for (int j = 0; j < data.length(); j++) {
+                        message += data.charAt(j);
+                        if (j % 20 == 0 && j != 0 || j == data.length() - 1) {
+                            g.drawString(message, (int) x + 20, (int) y + 20 * i++);
+                            message = "";
+                        }
+                    }
+                } else 
+                    g.drawString(data, (int) x + 20, (int) y + 20 * i++);
             }
-            // g.drawString(message, (int) x + 20, (int) y + 20);
+
+            paintTest(g, 0, 100);
+            paintTest(g, 2, 200);
+        }
+
+        private void paintTest(Graphics g, int x, int y) {
+            // g.setColor(Color.WHITE);
+            // g.fillRect(x, y, getWidth(), getHeight());
+            g.setColor(Color.BLACK);
+            g.drawString("Hello World", x, y);
         }
 
         public void run() {

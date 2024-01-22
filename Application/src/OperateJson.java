@@ -16,7 +16,7 @@ public class OperateJson {
             JsonNode json = objectMapper.readTree(new File("./data/" + String.valueOf(year)+ ".json"));
             res.add(Integer.toString(year));
             res.add(json.get("awards").get(0).get("award").textValue());
-            res.add(json.get("awards").get(0).get("ward").textValue());
+            res.add(json.get("awards").get(0).get("word").textValue());
             res.add(json.get("awards").get(0).get("winner").textValue());
             res.add(json.get("awards").get(0).get("text").textValue());
 

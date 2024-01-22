@@ -1,15 +1,20 @@
 import javax.swing.*;
-
+import java.awt.*;
 import src.*;
 
-public class App {
+public class App extends JFrame{
     public static void main(String[] args) {
-        JFrame frame = new JFrame("RandPanelApp");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setContentPane(new RandPanel());
-        frame.setSize(720, 480);
-        // frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        new App();
+    }
+
+    public App() {
+        // Window名
+        super("ボール操作アプリ");
+        add(new AwardCardPanel());
+        setPreferredSize(new Dimension(800, 800));
+        pack();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
     }
 
 }
