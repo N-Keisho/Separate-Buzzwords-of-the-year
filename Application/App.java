@@ -9,7 +9,7 @@ public class App extends JFrame{
 
     public App() {
         // Window名
-        super("ボール操作アプリ");
+        super("流行語大賞を仕分けろ！");
         add(new AwardCardPanel());
         setPreferredSize(new Dimension(AwardCardPanel.WIDTH, AwardCardPanel.HEIGHT));
         pack();
