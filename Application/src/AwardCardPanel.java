@@ -1,3 +1,4 @@
+// 2023オブジェクト指向設計演習 最終課題 J222403 永江恵尚
 package src;
 
 import javax.swing.*;
@@ -219,7 +220,7 @@ public class AwardCardPanel extends JPanel implements Runnable {
             g.setColor(new Color(251, 188, 5));
             g.fillRect(buttonX, buttonY, 230, 50);
             g.setColor(Color.BLACK);
-            String fin = "Exit で終了";
+            String fin = "Escape で終了";
             w = g.getFontMetrics().stringWidth(fin);
             g.drawString(fin, WIDTH/2 - w / 2, buttonY + 30);
 

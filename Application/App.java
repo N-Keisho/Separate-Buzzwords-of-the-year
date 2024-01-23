@@ -1,6 +1,7 @@
+// 2023オブジェクト指向設計演習 最終課題 J222403 永江恵尚
+import src.*;
 import javax.swing.*;
 import java.awt.*;
-import src.*;
 
 public class App extends JFrame{
     public static void main(String[] args) {

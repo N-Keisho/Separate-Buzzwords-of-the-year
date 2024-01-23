@@ -1,3 +1,4 @@
+// 2023オブジェクト指向設計演習 最終課題 J222403 永江恵尚
 package src;
 
 import java.io.File;
